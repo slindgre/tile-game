@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tile Game</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body id="body">
+    <canvas id="canvas"></canvas>
+    <audio src="theme.ogg" preload="auto" autoplay="true" loop="true"></audio>
+    <cite><a target="_blank" href="http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html">Artwork</a> by <a target="_blank" href="http://www.lostgarden.com/">Daniel Cook</a>; <a target="_blank" href="https://libre.fm/artist/Krzysztof+Kurkowski/track/Certain+place">Music</a> by <a target="_blank" href="https://libre.fm/artist/Krzysztof+Kurkowski/">Krzysztof Kurkowski</a></cite>
+    <!-- Characters -->
+    <img class="asset" id="cat-girl" src="tiles/Character Cat Girl.png" alt="">
+    <!-- Objects -->
+    <img class="asset" id="key" src="tiles/Key.png" alt="">
+    <!-- Terrain -->
+    <img class="asset" id="plain" src="tiles/Plain Block.png" alt="">
+    <img class="asset" id="grass" src="tiles/Grass Block.png" alt="">
+    <img class="asset" id="wood" src="tiles/Wood Block.png" alt="">
+    <!-- Shadows -->
+    <img class="asset" id="shadow-east" src="tiles/Shadow East.png" alt="">
+    <img class="asset" id="shadow-northeast" src="tiles/Shadow North East.png" alt="">
+    <img class="asset" id="shadow-north" src="tiles/Shadow North.png" alt="">
+    <img class="asset" id="shadow-northwest" src="tiles/Shadow North West.png" alt="">
+    <img class="asset" id="shadow-west" src="tiles/Shadow West.png" alt="">
+    <img class="asset" id="shadow-southwest" src="tiles/Shadow South West.png" alt="">
+    <img class="asset" id="shadow-south" src="tiles/Shadow South.png" alt="">
+    <img class="asset" id="shadow-southeast" src="tiles/Shadow South East.png" alt="">
+    <img class="asset" id="shadow-side" src="tiles/Shadow Side West.png" alt="">
+    <script type="application/javascript" src="assets.js"></script>
+    <script type="application/javascript" src="map.js"></script>
+    <script type="application/javascript" src="rendering.js"></script>
+    <script type="application/javascript" src="index.js"></script>
+  </body>
+</html>

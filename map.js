@@ -7,7 +7,7 @@ var row_count = 4;
 var column_count = 4;
 var terrain = [
     [[grass], [grass], [grass], [grass]],
-    [[grass], [grass], [grass, wood], [grass]],
+    [[grass], [grass], [grass, wood, wood], [grass]],
     [[grass], [grass, plain], [grass], [grass]],
     [[grass], [grass], [grass], [grass]],
 ];

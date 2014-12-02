@@ -26,7 +26,7 @@ function key_pressed_down(event) {
         }
     }
     if (event.keyCode === down_arrow_key) {
-        if (is_in_bounds(protagonist.x, protagonist.y + 1)&&(get_terrain_height(.x, .y + 1)-get_terrain_height(.x, .y) < 2) ) {
+        if (is_in_bounds(protagonist.x, protagonist.y + 1)&&((get_terrain_height(.x, .y + 1)-get_terrain_height(.x, .y)) < 2) ) {
             protagonist.y = protagonist.y + 1;
         }
     }

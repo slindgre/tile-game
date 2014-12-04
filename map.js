@@ -62,3 +62,7 @@ return false;
 }
 return terrain_cell[z] !== undefined;
 }
+
+function no_tree(x, y) {
+  terrain_row[terrain_cell.length]
+

@@ -64,5 +64,10 @@ return terrain_cell[z] !== undefined;
 }
 
 function no_tree(x, y) {
-  terrain_row[terrain_cell.length]
+  var terrain_row = terrain[y];
+if (terrain_row === undefined) {
+return undefined;
+}
+return terrain_row[terrain_row.length];
+}
 

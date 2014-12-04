@@ -71,6 +71,6 @@ var terrain_cell = get_terrain_cell(x, y);
 if (terrain_cell === undefined) {
 return false;
 }
-return terrain_cell[z] !== treeshort && != treetall;
+return terrain_cell[z] !== treeshort && terrain_cell[z] !== treetall;
 }
 

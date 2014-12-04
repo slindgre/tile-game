@@ -8,7 +8,7 @@ var column_count = 4;
 var terrain = [
     [[grass], [grass], [grass], [grass]],
     [[grass], [grass], [grass, wood, wood], [grass]],
-    [[grass], [grass, plain], [grass], [grass]],
+    [[grass], [grass, plain], [grass], [grass, treetall]],
     [[grass], [grass], [grass], [grass]],
 ];
 var occupants = [

@@ -63,11 +63,14 @@ return false;
 return terrain_cell[z] !== undefined;
 }
 
-function no_tree(x, y) {
-  var terrain_row = terrain[y];
-if (terrain_row === undefined) {
-return undefined;
+function no_tree(x, y, z) {
+if (z < 0) {
+return true;
 }
-return terrain_row[terrain_row.length];
+var terrain_cell = get_terrain_cell(x, y);
+if (terrain_cell === undefined) {
+return false;
+}
+return terrain_cell[z] !== treeshort, treetall;
 }
 

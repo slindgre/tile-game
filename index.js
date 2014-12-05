@@ -33,30 +33,7 @@ occupants[protagonist.y][protagonist.x] = protagonist.element;
 render();
 }
 
-function score(event) {
-    var i = 0;
-    if (event.keyCode === left_arrow_key) {
-        if (get_occupants_cell(protagonist.x - 1, protagonist.y) !== undefined) {
-            i = i + 1;
-        }
-    }
-  if (event.keyCode === right_arrow_key) {
-        if (get_occupants_cell(protagonist.x + 1, protagonist.y) !== undefined) {
-            i = i + 1;
-        }
-    }
-   if (event.keyCode === up_arrow_key) {
-        if (get_occupants_cell(protagonist.x, protagonist.y - 1) !== undefined) {
-             i = i + 1;
-        }
-    }
-   if (event.keyCode === down_arrow_key) {
-        if (get_occupants_cell(protagonist.x, protagonist.y + 1) !== undefined) {
-             i = i + 1;
-        }
-    }
- return i;
-}
+
 
 document.getElementById('score').innerHTML = "i";
 

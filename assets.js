@@ -5,7 +5,7 @@
 
 
 
-ar tile_width = 101;
+var tile_width = 101;
 var tile_height = 171;
 var block_width = tile_width;
 var block_y_height = 83;

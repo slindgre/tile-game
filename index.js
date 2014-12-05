@@ -30,7 +30,6 @@ if (is_in_bounds(protagonist.x, protagonist.y + 1)&&((get_terrain_height(protago
 protagonist.y = protagonist.y + 1;
 }
 }
-}
 occupants[protagonist.y][protagonist.x] = protagonist.element;
 render();
 }

@@ -8,7 +8,7 @@ var row_count = 20;
 var column_count = 20;
 var terrain = [
 [[grass, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [grass, wood, wood], [grass, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
-[[plain, wood, wood], [plain], [plain, wood, wood], [plain], [plain], [plain], [plain], [plain], [plain, [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain], [plain, wood, wood], [plain], [plain], [plain], [plain], [plain], [plain], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
 [[plain, wood, wood], [plain], [plain, wood, wood], [plain], [plain], [plain, wood, wood], [plain], [plain, wood, wood], [plain, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
 [[plain, wood, wood], [plain], [plain, wood, wood], [plain, wood, wood], [plain], [plain, wood, wood], [plain], [plain, wood], [grass], [grass, treetall], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
 [[plain, wood, wood], [plain], [plain], [plain], [plain], [plain, wood, wood], [plain], [plain], [plain, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],

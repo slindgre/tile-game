@@ -74,10 +74,4 @@ return false;
 return terrain_cell[z] !== treeshort && terrain_cell[z] !== treetall;
 }
 
-function get_occupants_cell(x, y) {
-var occupants_row = occupants[y];
-if (occupants_row === undefined) {
-return undefined;
-}
-return occupants_row[x];
-}
+

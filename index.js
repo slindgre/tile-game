@@ -37,7 +37,7 @@ function score(x, y) {
     var i = 0
     if (event.keyCode === left_arrow_key) {
         if (get_occupants_cell(protagonist.x - 1, protagonist.y) !== undefined) {
-            protagonist.x = protagonist.x - 1;
+            i = i + 1;
         }
     }
   if (event.keyCode === right_arrow_key) {

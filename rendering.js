@@ -78,7 +78,7 @@ context.restore();
 window.addEventListener('resize', render);
 render();
 // Panning the camera
-var maximum_pan_rate = 0.0;
+var maximum_pan_rate = 0.03;
 function pan() {
 var dx = protagonist.x - center_x;
 var dy = protagonist.y - center_y;

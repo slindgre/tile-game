@@ -58,7 +58,7 @@ function score(event) {
  return i;
 }
 
-document.getElementById('score').innerHTML = i
+document.addEventListener('score', score);
 
 
 document.addEventListener('keydown', key_pressed_down);

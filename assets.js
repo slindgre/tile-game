@@ -5,7 +5,7 @@
 
 
 
-var tile_width = 101;
+ar tile_width = 101;
 var tile_height = 171;
 var block_width = tile_width;
 var block_y_height = 83;
@@ -14,15 +14,10 @@ var block_z_height = 39;
 var cat_girl = document.getElementById('cat-girl');
 // Objects
 var key = document.getElementById('key');
-var blue = document.getElementById('gem-blue');
-var green = document.getElementById('gem-green');
-var orange = document.getElementById('gem-orange');
 // Terrain
 var plain = document.getElementById('plain');
 var grass = document.getElementById('grass');
 var wood = document.getElementById('wood');
-var treetall = document.getElementById('treetall');
-var treeshort = document.getElementById('treeshort');
 // Shadows
 var shadows = [
 {

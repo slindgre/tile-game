@@ -32,10 +32,7 @@ protagonist.y = protagonist.y + 1;
 occupants[protagonist.y][protagonist.x] = protagonist.element;
 render();
 }
-}
-occupants[protagonist.y][protagonist.x] = protagonist.element;
-render();
-}
+
 
 
 function score(event) {

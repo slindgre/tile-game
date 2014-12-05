@@ -7,7 +7,6 @@ var left_arrow_key = 37;
 var up_arrow_key = 38;
 var right_arrow_key = 39;
 var down_arrow_key = 40;
-
 function key_pressed_down(event) {
 occupants[protagonist.y][protagonist.x] = undefined;
 if (event.keyCode === left_arrow_key) {
@@ -28,6 +27,10 @@ protagonist.y = protagonist.y - 1;
 if (event.keyCode === down_arrow_key) {
 if (is_in_bounds(protagonist.x, protagonist.y + 1)&&((get_terrain_height(protagonist.x, protagonist.y + 1)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x, protagonist.y + 1, 1) ) ) {
 protagonist.y = protagonist.y + 1;
+}
+}
+occupants[protagonist.y][protagonist.x] = protagonist.element;
+render();
 }
 }
 occupants[protagonist.y][protagonist.x] = protagonist.element;

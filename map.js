@@ -3,19 +3,52 @@
 
 // Initial map
 
-var row_count = 4;
-var column_count = 4;
+
+var row_count = 20;
+var column_count = 20;
 var terrain = [
-[[grass], [grass], [grass], [grass]],
-[[grass], [grass], [grass, wood], [grass]],
-[[grass], [grass, plain], [grass], [grass]],
-[[grass], [grass], [grass], [grass]],
+[[grass, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [grass, wood, wood], [grass, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain], [plain, wood, wood], [plain], [plain], [plain], [plain], [plain], [plain, [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain], [plain, wood, wood], [plain], [plain], [plain, wood, wood], [plain], [plain, wood, wood], [plain, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain], [plain, wood, wood], [plain, wood, wood], [plain], [plain, wood, wood], [plain], [plain, wood], [grass], [grass, treetall], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain], [plain], [plain], [plain], [plain, wood, wood], [plain], [plain], [plain, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain], [plain], [plain, wood, wood], [plain], [plain], [plain, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain, wood, wood], [plain], [plain, wood, wood], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[plain, wood, wood], [plain], [plain], [plain, wood, wood], [plain], [plain], [plain], [plain], [plain, wood, wood], [grass, treeshort], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass, wood, wood], [grass], [grass, wood, wood], [grass], [grass, treetall], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass, wood, wood], [grass], [wood], [grass], [grass, treetall], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
+[[grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass], [grass]],
 ];
 var occupants = [
-[undefined, undefined, undefined, undefined],
-[undefined, key, undefined, undefined],
-[undefined, undefined, cat_girl, undefined],
-[undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, cat_girl, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[blue, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
+[undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined],
 ];
 var protagonist = {
 element: cat_girl,

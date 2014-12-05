@@ -7,8 +7,8 @@ var left_arrow_key = 37;
 var up_arrow_key = 38;
 var right_arrow_key = 39;
 var down_arrow_key = 40;
+var i = 0;
 function key_pressed_down(event) {
-  var i = 0
 occupants[protagonist.y][protagonist.x] = undefined;
 if (event.keyCode === left_arrow_key) {
 if (is_in_bounds(protagonist.x - 1, protagonist.y)&&((get_terrain_height(protagonist.x - 1, protagonist.y)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x - 1, protagonist.y, 1)) ) {

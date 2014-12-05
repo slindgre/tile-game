@@ -35,7 +35,7 @@ function key_pressed_down(event) {
 }
 
 function score(event) {
-    var i = 0
+    var i = 0;
     if (event.keyCode === left_arrow_key) {
         if (get_occupants_cell(protagonist.x - 1, protagonist.y) !== undefined) {
             i = i + 1;
@@ -56,7 +56,7 @@ function score(event) {
              i = i + 1;
         }
     }
- return i
+ return i;
 }
 
 document.getElementById('score').innerHTML = i

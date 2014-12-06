@@ -7,10 +7,8 @@ var left_arrow_key = 37;
 var up_arrow_key = 38;
 var right_arrow_key = 39;
 var down_arrow_key = 40;
-var left_arrow_key = 37;
-var up_arrow_key = 38;
-var right_arrow_key = 39;
-var down_arrow_key = 40;
+
+
 function key_pressed_down(event) {
 occupants[protagonist.y][protagonist.x] = undefined;
 if (event.keyCode === left_arrow_key) {

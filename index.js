@@ -61,10 +61,4 @@ i = i + 1;
 }
 return i;
 }
-
-
-
-
-
-
 document.addEventListener('keydown', key_pressed_down);

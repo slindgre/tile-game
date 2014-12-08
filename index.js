@@ -15,7 +15,7 @@ var down_arrow_key = 40;
 
  
 var i = 0
-document.getElementById('score').innerHTML= i;
+
 function score(event) {
 
 
@@ -25,6 +25,7 @@ if (protagonist.x === blue.x){
  
 }
 }
+document.getElementById('score').innerHTML= i;
 }
 
 

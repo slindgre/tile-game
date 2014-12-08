@@ -30,7 +30,7 @@ if (i = max){
 }
 if (i > max){
   alert("Refresh to Play Again")
-
+}
 }
 
 

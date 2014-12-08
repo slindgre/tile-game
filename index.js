@@ -9,9 +9,9 @@ var right_arrow_key = 39;
 var down_arrow_key = 40;
 
 
-
-function add(){
  var i = 0;
+function add(){
+
  i = i + 1;
  return i;
 }

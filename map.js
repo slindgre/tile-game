@@ -60,6 +60,16 @@ element: blue,
 x: 1,
 y: 4,
 };
+var gem1 = {
+element: blue,
+x: 2,
+y: 4,
+};
+var gem2 = {
+element: blue,
+x: 3,
+y: 4,
+};
 // Map utilities
 function get_terrain_cell(x, y) {
 var terrain_row = terrain[y];

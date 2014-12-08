@@ -28,7 +28,7 @@ document.getElementById("score").innerHTML= 'Score: '+i;
 if (i === max){
   alert("Winner, Winner, Chicken Dinner ")
 }
-if (i > max){
+if (i === max){
   alert("Refresh to Play Again")
 }
 }

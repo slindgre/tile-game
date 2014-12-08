@@ -55,6 +55,11 @@ element: cat_girl,
 x: 1,
 y: 1,
 };
+var gem = {
+element: cat_girl,
+x: 4,
+y: 1,
+};
 // Map utilities
 function get_terrain_cell(x, y) {
 var terrain_row = terrain[y];

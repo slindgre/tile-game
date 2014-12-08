@@ -21,9 +21,8 @@ function score(x,y) {
 
 if (x === blue.y){
 if (y === blue.x){
-  i = i + 1;
- 
-}
+  i += 1;
+ }
 }
 document.getElementById("score").innerHTML= 'Score: '+i;
 

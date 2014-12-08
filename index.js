@@ -92,5 +92,5 @@ render()
 }
 
 
- document.getElementById('score').innerHTML= Math.max(score([37, 38, 39, 40]));
+ document.getElementById('score').innerHTML= i;
 document.addEventListener('keydown', key_pressed_down);

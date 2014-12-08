@@ -19,8 +19,8 @@ var i = 0;
 function score(x,y) {
 
 
-if (x === blue.x){
 if (y === blue.y){
+if (x === blue.x){
   i += 1;
  }
 }

@@ -9,12 +9,7 @@ var right_arrow_key = 39;
 var down_arrow_key = 40;
 
 
- var i = 0;
-function add(){
 
- i = i + 1;
- return i;
-}
 
 
 
@@ -23,28 +18,28 @@ function score(event) {
 
 if (event.keyCode === left_arrow_key) {
 if (get_occupants_cell(protagonist.x - 1, protagonist.y) !==  undefined) {
-add();
+i = i + 1;
  return i;
 }
  return i;
 }
 if (event.keyCode === right_arrow_key) {
 if (get_occupants_cell(protagonist.x + 1, protagonist.y) !==  undefined) {
-add();
+i = i + 1;
  return i;
 }
  return i;
 }
 if (event.keyCode === up_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y - 1) !==  undefined) {
-add();
+i = i + 1;
  return i;
 }
  return i;
 }
 if (event.keyCode === down_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y + 1) !==  undefined) {
-add();
+i = i + 1;
  return i;
 }
  return i;

@@ -13,40 +13,45 @@ var map = [0, 1, 2, 3]
 
 
  var i = 0
+ 
+ function add(){
+  i = i + 1;
+   document.getElementById('score').innerHTML= map[i];
+ }
 
 function score(event) {
 
 
 if (event.keyCode === left_arrow_key) {
 if (get_occupants_cell(protagonist.x - 1, protagonist.y) !==  undefined) {
-i = i + 1;
+add();
 
 }
 
 }
 if (event.keyCode === right_arrow_key) {
 if (get_occupants_cell(protagonist.x + 1, protagonist.y) !==  undefined) {
-i = i + 1;
+add();
 
 }
 
 }
 if (event.keyCode === up_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y - 1) !==  undefined) {
-i = i + 1;
+add();
 
 }
 
 }
 if (event.keyCode === down_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y + 1) !==  undefined) {
-i = i + 1;
+add();
 
 }
 
 }
 
- document.getElementById('score').innerHTML= map[i];
+
 }
 
 

@@ -25,7 +25,7 @@ if (x === gem.x||x===gem1.x||x===gem2.x){
  }
 }
 document.getElementById("score").innerHTML= 'Score: '+i;
-if (i = max){
+if (i === max){
   alert("Winner, Winner, Chicken Dinner ")
 }
 if (i > max){

@@ -8,6 +8,12 @@ var up_arrow_key = 38;
 var right_arrow_key = 39;
 var down_arrow_key = 40;
 
+var i = 0
+
+function add(){
+ i = i + 1;
+}
+
 
 
 
@@ -15,28 +21,28 @@ function score(event) {
 var i = 0;
 if (event.keyCode === left_arrow_key) {
 if (get_occupants_cell(protagonist.x - 1, protagonist.y) !==  undefined) {
-i = i + 1;
+add()
 
 }
 
 }
 if (event.keyCode === right_arrow_key) {
 if (get_occupants_cell(protagonist.x + 1, protagonist.y) !==  undefined) {
-i = i + 1;
+add()
 
 }
 
 }
 if (event.keyCode === up_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y - 1) !==  undefined) {
-i = i + 1;
+add()
 
 }
 
 }
 if (event.keyCode === down_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y + 1) !==  undefined) {
-i = i + 1;
+add()
 
 }
 

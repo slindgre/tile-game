@@ -23,28 +23,28 @@ function score(event) {
 var i = 0;
 if (event.keyCode === left_arrow_key) {
 if (get_occupants_cell(protagonist.x - 1, protagonist.y) !==  undefined) {
-add()
+add();
 
 }
 
 }
 if (event.keyCode === right_arrow_key) {
 if (get_occupants_cell(protagonist.x + 1, protagonist.y) !==  undefined) {
-add()
+add();
 
 }
 
 }
 if (event.keyCode === up_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y - 1) !==  undefined) {
-add()
+add();
 
 }
 
 }
 if (event.keyCode === down_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y + 1) !==  undefined) {
-add()
+add();
 
 }
 
@@ -76,7 +76,7 @@ protagonist.y = protagonist.y + 1;
 }
 }
 occupants[protagonist.y][protagonist.x] = protagonist.element;
-render();
+render()
 }
 
 

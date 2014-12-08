@@ -56,7 +56,7 @@ x: 1,
 y: 1,
 };
 var gem = {
-element: cat_girl,
+element: blue,
 x: 1,
 y: 4,
 };

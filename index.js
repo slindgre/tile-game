@@ -63,11 +63,13 @@ add();
  return i;
 }
 }
+}
 if (event.keyCode === right_arrow_key) {
 if (is_in_bounds(protagonist.x + 1, protagonist.y)&&((get_terrain_height(protagonist.x + 1, protagonist.y)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x + 1, protagonist.y, 1) )) {
 protagonist.x = protagonist.x + 1;
 if (get_occupants_cell(protagonist.x + 1, protagonist.y) !==  undefined) {
 add();
+}
 }
 }
 if (event.keyCode === up_arrow_key) {
@@ -78,12 +80,14 @@ add();
  return i;
 }
 }
+}
 if (event.keyCode === down_arrow_key) {
 if (is_in_bounds(protagonist.x, protagonist.y + 1)&&((get_terrain_height(protagonist.x, protagonist.y + 1)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x, protagonist.y + 1, 1) ) ) {
 protagonist.y = protagonist.y + 1;
 if (get_occupants_cell(protagonist.x, protagonist.y + 1) !== undefined) {
 add();
 return i;
+}
 }
 }
 }

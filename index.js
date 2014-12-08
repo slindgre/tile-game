@@ -17,12 +17,8 @@ var max = 3;
 var i = 0;
 
 function score(x,y) {
-
-
-if (y === gem.y||y===gem1.y||y===gem2.y){
-if (x === gem.x||x===gem1.x||x===gem2.x){
+if ((y === gem.y&&x===gem.x)||(y===gem1.y&&x===gem1.x)||(y===gem2.y&&x===gem2.x)){
   i += 1;
- }
 }
 document.getElementById("score").innerHTML= 'Score: '+i;
 if (i === max){

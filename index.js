@@ -93,7 +93,7 @@ return i;
 occupants[protagonist.y][protagonist.x] = protagonist.element;
 render()
 }
-
+}
 
  document.getElementById('score').innerHTML= i;
 document.addEventListener('keydown', key_pressed_down);

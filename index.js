@@ -28,6 +28,7 @@ if (protagonist.x === blue.x){
  add();
 }
 }
+}
 
 
 function key_pressed_down(event) {

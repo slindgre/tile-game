@@ -9,10 +9,10 @@ var right_arrow_key = 39;
 var down_arrow_key = 40;
 
 
-var i = 0;
+
 
 function score(event) {
-
+var i = 0;
 if (event.keyCode === left_arrow_key) {
 if (get_occupants_cell(protagonist.x - 1, protagonist.y) !==  undefined) {
 i = i + 1;

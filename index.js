@@ -19,8 +19,8 @@ var i = 0;
 function score(x,y) {
 
 
-if (y === gem.y)||(y===gem1.y)||(y===gem2.y){
-if (x === gem.x)||(y===gem1.x)||(y===gem2.x){
+if (y === gem.y||y===gem1.y||y===gem2.y){
+if (x === gem.x||x===gem1.x||x===gem2.x){
   i += 1;
  }
 }

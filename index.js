@@ -14,13 +14,13 @@ var down_arrow_key = 40;
 
 
  
-var i = 5;
+var i = 0;
 
 function score(x,y) {
 
 
-if (x === blue.y){
-if (y === blue.x){
+if (x === blue.x){
+if (y === blue.y){
   i += 1;
  }
 }

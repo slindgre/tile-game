@@ -14,7 +14,7 @@ var down_arrow_key = 40;
 
 
  
-var i = 0
+var i = 5;
 
 function score(x,y) {
 

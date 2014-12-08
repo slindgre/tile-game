@@ -14,18 +14,15 @@ var map = [0, 1, 2, 3];
 
 
  
- function add(){
-   var i = 0;
-  i = i + 1;
-   document.getElementById('score').innerHTML= map[i];
- }
+
 
 function score(event) {
-
+var i = 0
 
 if (protagonist.y === blue.y){
 if (protagonist.x === blue.x){
- add();
+  i = i + 1;
+   document.getElementById('score').innerHTML= map[i];
 }
 }
 }

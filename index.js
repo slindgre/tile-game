@@ -14,10 +14,10 @@ var map = [0, 1, 2, 3];
 
 
  
-
+var i = 0
 
 function score(event) {
-var i = 0
+
 
 if (protagonist.y === blue.y){
 if (protagonist.x === blue.x){

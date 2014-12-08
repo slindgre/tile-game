@@ -69,5 +69,5 @@ i = i + 1;
 }
 return i;
 }
- document.getElementById('i').innerHTML= i;
+ document.getElementById('score').innerHTML= i;
 document.addEventListener('keydown', key_pressed_down);

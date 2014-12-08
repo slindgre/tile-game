@@ -15,14 +15,14 @@ var down_arrow_key = 40;
 
  
 var i = 0
-
+document.getElementById('score').innerHTML= i;
 function score(event) {
 
 
 if (protagonist.y === blue.y){
 if (protagonist.x === blue.x){
   i = i + 1;
-   document.getElementById('score').innerHTML= i;
+ 
 }
 }
 }

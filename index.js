@@ -16,11 +16,11 @@ var down_arrow_key = 40;
  
 var i = 0
 
-function score() {
+function score(x,y) {
 
 
-if (protagonist.y === blue.y){
-if (protagonist.x === blue.x){
+if (x === blue.y){
+if (y === blue.x){
   i = i + 1;
  
 }
@@ -31,32 +31,34 @@ document.getElementById("score").innerHTML= 'Score: '+i;
 
 
 function key_pressed_down(event) {
-//occupants[protagonist.y][protagonist.x] = undefined;
+occupants[protagonist.y][protagonist.x] = undefined;
 if (event.keyCode === left_arrow_key) {
 if (is_in_bounds(protagonist.x - 1, protagonist.y)&&((get_terrain_height(protagonist.x - 1, protagonist.y)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x - 1, protagonist.y, 1)) ) {
+score(protagonist.x-1,protagonist.y);
 protagonist.x = protagonist.x - 1;
-
 }
 }
 if (event.keyCode === right_arrow_key) {
 if (is_in_bounds(protagonist.x + 1, protagonist.y)&&((get_terrain_height(protagonist.x + 1, protagonist.y)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x + 1, protagonist.y, 1) )) {
+score(protagonist.x+1,protagonist.y);
 protagonist.x = protagonist.x + 1;
 
 }
 }
 if (event.keyCode === up_arrow_key) {
 if (is_in_bounds(protagonist.x, protagonist.y - 1)&&((get_terrain_height(protagonist.x, protagonist.y - 1)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x, protagonist.y - 1, 1)) ) {
+score(protagonist.x,protagonist.y-1);
 protagonist.y = protagonist.y - 1;
 
 }
 }
 if (event.keyCode === down_arrow_key) {
 if (is_in_bounds(protagonist.x, protagonist.y + 1)&&((get_terrain_height(protagonist.x, protagonist.y + 1)-get_terrain_height(protagonist.x, protagonist.y)) < 2)&&(no_tree(protagonist.x, protagonist.y + 1, 1) ) ) {
+score(protagonist.x,protagonist.y+1);
 protagonist.y = protagonist.y + 1;
 
 }
 }
-score();
 occupants[protagonist.y][protagonist.x] = protagonist.element;
 render()
 }

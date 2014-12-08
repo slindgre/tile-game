@@ -16,9 +16,9 @@ function score(event) {
 if (event.keyCode === left_arrow_key) {
 if (get_occupants_cell(protagonist.x - 1, protagonist.y) ===  blue) {
 i = i + 1;
-return i;
+
 }
-return i;
+
 }
 if (event.keyCode === right_arrow_key) {
 if (get_occupants_cell(protagonist.x + 1, protagonist.y) ===  blue) {

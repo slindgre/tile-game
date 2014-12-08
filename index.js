@@ -46,9 +46,9 @@ i = i + 1;
 
 }
 
-  document.getElementById('score').innerHTML= i;
+ 
 }
-
+document.getElementById('score').innerHTML= i;
 
 function key_pressed_down(event) {
 occupants[protagonist.y][protagonist.x] = undefined;

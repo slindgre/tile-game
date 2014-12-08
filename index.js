@@ -80,5 +80,5 @@ render();
 }
 
 
- document.getElementById('score').innerHTML= i;
+ document.getElementById('score').innerHTML= add();
 document.addEventListener('keydown', key_pressed_down);

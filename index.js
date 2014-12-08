@@ -42,30 +42,30 @@ var i = 0;
 if (event.keyCode === left_arrow_key) {
 if (get_occupants_cell(protagonist.x - 1, protagonist.y) !==  undefined) {
 i = i + 1;
-
+returen i;
 }
-
+returen i;
 }
 if (event.keyCode === right_arrow_key) {
 if (get_occupants_cell(protagonist.x + 1, protagonist.y) !==  undefined) {
 i = i + 1;
-
+returen i;
 }
-
+returen i;
 }
 if (event.keyCode === up_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y - 1) !==  undefined) {
 i = i + 1;
-
+returen i;
 }
 return i;
 }
 if (event.keyCode === down_arrow_key) {
 if (get_occupants_cell(protagonist.x, protagonist.y + 1) !==  undefined) {
 i = i + 1;
-
+returen i;
 }
-
+returen i;
 }
 return i;
 }

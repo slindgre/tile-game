@@ -11,7 +11,7 @@ var down_arrow_key = 40;
 
 
 function add(){
- var i = 0
+ var i = 0;
  i = i + 1;
  return i;
 }

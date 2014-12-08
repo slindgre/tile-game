@@ -80,5 +80,5 @@ render()
 }
 
 
- document.getElementById('score').innerHTML= i;
+ document.getElementById('score').innerHTML= sum(score([37, 38, 39, 40]));
 document.addEventListener('keydown', key_pressed_down);

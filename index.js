@@ -8,13 +8,14 @@ var up_arrow_key = 38;
 var right_arrow_key = 39;
 var down_arrow_key = 40;
 
-var map = [0, 1, 2, 3]
+var map = [0, 1, 2, 3];
 
 
 
- var i = 0
+
  
  function add(){
+   var i = 0;
   i = i + 1;
    document.getElementById('score').innerHTML= map[i];
  }

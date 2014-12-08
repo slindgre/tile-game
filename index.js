@@ -29,7 +29,7 @@ if (i = max){
   alert("Winner, Winner, Chicken Dinner <br> Refresh to Play Again")
 }
 if (i > max){
-  alert(Refresh to Play Again)
+  alert("Refresh to Play Again")
 
 }
 

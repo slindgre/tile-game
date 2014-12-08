@@ -23,36 +23,10 @@ var map = [0, 1, 2, 3];
 function score(event) {
 
 
-if (event.keyCode === left_arrow_key) {
-if (get_occupants_cell(protagonist.x - 1, protagonist.y) !==  undefined) {
-add();
-
+if (protagonist.y === blue.y){
+if (protagonist.x === blue.x){
+ add();
 }
-
-}
-if (event.keyCode === right_arrow_key) {
-if (get_occupants_cell(protagonist.x + 1, protagonist.y) !==  undefined) {
-add();
-
-}
-
-}
-if (event.keyCode === up_arrow_key) {
-if (get_occupants_cell(protagonist.x, protagonist.y - 1) !==  undefined) {
-add();
-
-}
-
-}
-if (event.keyCode === down_arrow_key) {
-if (get_occupants_cell(protagonist.x, protagonist.y + 1) !==  undefined) {
-add();
-
-}
-
-}
-
-
 }
 
 

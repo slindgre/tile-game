@@ -90,7 +90,6 @@ return i;
 }
 }
 }
-}
 occupants[protagonist.y][protagonist.x] = protagonist.element;
 render()
 }

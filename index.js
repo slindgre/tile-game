@@ -25,7 +25,7 @@ if (protagonist.x === blue.x){
  
 }
 }
-document.getElementById('score').innerHTML= i;
+document.getElementById('score').innerHTML= 'SCORE: '+i+' <a target="_blank" href="http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html">Artwork</a> by <a target="_blank" href="http://www.lostgarden.com/">Daniel Cook</a>; <a target="_blank" href="https://libre.fm/artist/Krzysztof+Kurkowski/track/Certain+place">Music</a> by <a target="_blank" href="https://libre.fm/artist/Krzysztof+Kurkowski/">Krzysztof Kurkowski</a>';
 }
 
 

@@ -63,7 +63,7 @@ y: 10,
 var gem1 = {
 element: blue,
 x: 20,
-y: 7,
+y: 6,
 };
 var gem2 = {
 element: blue,
